@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Magic 8 Ball</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="magic.css">
+</head>
+<body>
+    <embed src="audio.mp3" autostart="true" loop="true" width="2" height="0">
+    <div class="gradient-div" id="index-gradient">
+        <div class="heading preview-item shake-slow">Magic 8 Ball
+            <img src="ball.png" alt="Magic 8 ball">
+        </div>
+        <div class="usernameForm">
+            <form action="questions.html">
+                <div>
+                    <label for="txtuser" class="lblusertext">Enter your name</label>
+                    <input type="text" name="txtuser" id="user" class="txtuser" placeholder="Your Name..." required/>
+                </div>
+                <div>
+                    <input type="submit" value="Lets Play!!!" onclick="storeUser()" class="btnStarted"/>
+                </div>
+            </form>
+        </div>
+    </div>
+    <audio src="audio.mp3" autoplay>
+        <embed src="audio.mp3" width="180" height="90" hidden="true" />
+    </audio>
+    
+    
+  <!-- External JavaScript File -->
+  <script src="magic.js"></script>
+</body>
+</html>

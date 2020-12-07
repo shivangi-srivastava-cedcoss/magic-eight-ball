@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started | Magic 8 Ball</title>
+    
+    <link rel="stylesheet" href="magic.css">
+</head>
+<body onload="user1()">
+    <div class="gradient-div">
+        <div class="heading">Magic 8 Ball
+            <img src="ball.png" class="transform-img" alt="Magic 8 ball">
+        </div>
+        <p id="lblUser"></p>
+        <div class="row">
+            <div class="left">
+                <div id="form1" class="usernameForm quesForm">
+                    <div id="quesHeading" class="quesHeading"><span id="quesNo"></span></p></div>
+                    <div class="question" id="question"></div>
+                    <div id="answer" class="answer">
+                        <label for="answer" id="lblans">
+                        </label>
+                    </div>
+                    <div class="buttons">
+                        <span>
+                            <input type="button" value="Quit Game" name="quit" id="btnQuit" onclick="quit()">
+                        </span>
+                        <span><input type="button" name="continue" id="btnContinue" value="Continue" onclick="Continue()"></span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="right">
+                <img src="8ball.gif" alt="">
+                
+            </div>
+        </div>
+    </div>
+    <script src="magic.js"></script>
+</body>
+</html>
